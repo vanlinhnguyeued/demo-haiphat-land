@@ -9,11 +9,16 @@ import qs from "qs";
 import configureStore from "./configureStore";
 import { fetchCounter } from "./api";
 const assets = require(process.env.RAZZLE_ASSETS_MANIFEST);
+const publicFolder =
+  process.env.NODE_ENV === "production"
+    ? path.join(__dirname, "../build/public")
+    : "public";
 
 const server = express();
 server
   .disable("x-powered-by")
   .use(express.static(process.env.RAZZLE_PUBLIC_DIR))
+  .use(express.static(publicFolder))
   .get("/*", (req, res) => {
     fetchCounter((apiResult) => {
       // Read the counter from the request, if provided
