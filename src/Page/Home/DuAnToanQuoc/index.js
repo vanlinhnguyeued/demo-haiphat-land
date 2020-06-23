@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import RenderItem from "./renderItem";
+import RenderItem from "./RenderItem";
 import axios from "axios";
 import Slider from "react-slick";
 class index extends Component {

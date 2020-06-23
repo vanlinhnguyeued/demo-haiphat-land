@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import RenderItem from "./renderItem";
+import RenderItem from "./RenderItem";
 import axios from "axios";
 class index extends Component {
   constructor(props) {
