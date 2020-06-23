@@ -1,0 +1,24 @@
+@import "./App.css";
+@import "./Page/Profile/styles.css";
+@import "./Page/Navbar/styles.css";
+@import "./Page/ThueNha/Banner/styles.css";
+@import "./Page/ThueNha/Content/styles.css";
+@import "./Page/TinTuc/Banner/styles.css";
+@import "./Page/TinTuc/styles.css";
+@import "./Page/TinTuc/ListHeader/styles.css";
+@import "./Page/VeChungToi/styles.css";
+@import "./Page/VeChungToi/Banner/styles.css";
+@import "./Page/MuaNha/Banner/styles.css";
+@import "./Page/MuaNha/Content/styles.css";
+@import "./Page/MuaNha/Content/styles.css";
+@import "./Page/Video/styles.css";
+@import "./Page/Video/Live/styles.css";
+@import "./Page/Video/Bds/styles.css";
+@import "./Page/Video/Banner/styles.css";
+@import "./Page/DangKy/styles.css";
+@import "./Page/DetailDuAn/styles.css";
+@import "./Page/DetailDuAn/Banner/styles.css";
+@import "./Page/DetailDuAn/ChuDauTu/styles.css";
+@import "./Page/DetailMuaNha/styles.css";
+
+@import "./Component/components/styles.css";

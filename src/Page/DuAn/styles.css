@@ -1,0 +1,214 @@
+.container_duan {
+  background-color: var(--mainBG);
+  overflow: hidden;
+}
+.box_tiemkiem {
+  padding: 40px 5% 15px 5%;
+}
+.content_duan {
+  padding: 15px 5%;
+}
+.header_duan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0px 10px;
+}
+.header_duan > h2 {
+  color: var(--title);
+  font-weight: bold;
+  font-size: 35px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.header_duan > h4 {
+  color: var(--title);
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+.box_duan {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.div_img_duan {
+  height: 280px;
+  width: 100%;
+  /* position: relative; */
+  overflow: hidden;
+}
+.img_duan {
+  height: 100%;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+.img_duan:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+.item_duan {
+  width: 100%;
+  padding: 10px;
+  height: 100%;
+}
+
+.item_duan > div {
+  height: 100%;
+  padding: 10px;
+  background-color: var(--itemBG);
+  border-radius: 5px;
+}
+.item_duan_child {
+  width: 100%;
+  padding: 20px;
+}
+
+.view_title {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.view_title > h4 {
+  color: #000;
+  margin-bottom: -5px;
+  font-weight: bold;
+}
+
+.view_title > div {
+  display: flex;
+  flex: 1;
+  height: 2px;
+  background-color: white;
+  margin-left: 15px;
+}
+
+.item_duan_child > h2 > a {
+  color: var(--title);
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.item_duan_child > h2:hover > a {
+  color: var(--title);
+}
+
+.diachi_item_duan {
+  color: var(--subTitle);
+  font-size: 13.5px;
+  margin-bottom: 2px;
+}
+.diachi_item_duan > i {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.animation_img {
+  position: absolute;
+  background-color: yellow;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+
+.input_search_duan {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.input_search {
+  width: 70%;
+  height: 40px;
+  border-radius: 5px;
+  padding: 1px 15px 0 15px;
+  border: 1.4px solid var(--borderColor);
+  outline: none;
+}
+
+.div_btn_duan {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn_duan {
+  background-color: var(--buttonBGNoAc);
+  width: 140px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border: 1.4px solid var(--borderColor);
+  border-radius: 5px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.txt_btn_duan {
+  color: var(--buttonTextNoAc);
+  font-weight: bold;
+}
+
+.btn_duan:hover {
+  background-color: var(--buttonBG);
+}
+
+.btn_duan:hover .txt_btn_duan {
+  color: var(--buttonText);
+}
+
+.icon_qt_duan {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.icon_qt_duan:hover > i {
+  color: var(--title);
+}
+.icon_qt_duan > i {
+  font-size: 23px;
+  font-size: 30px;
+}
+.icon_qt_duan_hover {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.icon_qt_duan_hover > i {
+  font-size: 30px;
+  color: var(--title);
+}
+@media only screen and (max-width: 1024px) {
+  .box_duan {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .input_search {
+    width: 100%;
+  }
+  .box_duan {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .div_img_duan {
+    height: 250px;
+  }
+}

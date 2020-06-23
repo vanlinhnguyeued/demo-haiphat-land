@@ -1,0 +1,42 @@
+.container_profile {
+  height: 100%;
+  width: 100%;
+  background: var(--mainBG);
+  display: flex;
+  flex-direction: column;
+}
+.content_profile {
+  margin: 15px 30px;
+  background: var(--itemBG);
+  border-radius: 5px;
+  box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.06);
+  padding: 10px;
+  justify-content: space-between;
+}
+.flex_row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.flex_col {
+  display: flex;
+  flex-direction: column;
+}
+.title_menu_profile {
+  line-height: 18px;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.item_menu_profile {
+  margin-right: 10px;
+  color: var(--text);
+}
+.item_menu_profile:hover,
+.ant-tabs-tab:hover,
+.ant-tabs-tab.ant-tabs-tab-active {
+  color: var(--menuHover) !important;
+}
+.ant-tabs-ink-bar {
+  background-color: var(--menuHover) !important;
+}

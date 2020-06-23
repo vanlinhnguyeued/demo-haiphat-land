@@ -1,0 +1,129 @@
+.container_duan_chudautu {
+  margin-bottom: 10px;
+}
+.title_duan_chudautu {
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+.content_duan_chudautu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.item_duan_chudautu {
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.item_img_duan_chudautu {
+  height: 180px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.img_duan_chudautu {
+  height: 100%;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+.icon_qt_duan_chudautu {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.icon_qt_duan_chudautu > i {
+  font-size: 23px;
+}
+.icon_qt_duan_chudautu_hover {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.icon_qt_duan_chudautu_hover > i {
+  font-size: 23px;
+  color: var(--title);
+}
+.item_duan_chudautu:hover .img_duan_chudautu {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.item_thongtin_duan_chudautu {
+  background-color: var(--itemBG);
+  padding: 15px;
+}
+.title_item_thongtin_duan {
+  font-size: 17px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 19px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  height: 38px;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+.title_item_thongtin_duan:hover {
+  color: var(--title);
+}
+.diachi_item_thongtin_duan {
+  color: var(--subTitle);
+  font-size: 13.5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 19px;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  height: 19px;
+  margin-bottom: 2px;
+}
+.diachi_item_thongtin_duan > i {
+  font-size: 16px;
+  margin-right: 5px;
+}
+.gia_item_thongtin_duan {
+  font-size: 15px;
+  color: black;
+  margin-bottom: 2px;
+}
+.sl_item_thongtin_duan {
+  display: flex;
+  align-items: center;
+}
+.sl_item_thongtin_duan > div {
+  display: flex;
+  align-items: flex-end;
+  color: black;
+  margin-right: 20px;
+  font-size: 13.9px;
+}
+.sl_item_thongtin_duan > div > img {
+  margin-right: 5px;
+}
+@media only screen and (max-width: 1024px) {
+  .content_duan_chudautu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .content_duan_chudautu {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -1,0 +1,110 @@
+.gioithieu_detailduan {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+}
+
+.row_tienich_gioithieu {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+
+.item_tinchinh_gioithieu {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.title_item_tinchinh_gioithieu {
+  width: 165px !important;
+}
+
+.item_tienich_gioithieu {
+  display: flex;
+  margin-bottom: 10px;
+  width: 50%;
+}
+.item_tienich_gioithieu > i {
+  font-size: 14px;
+  margin-top: 3px;
+  margin-right: 3px;
+  color: var(--title);
+}
+.row_bando_gioithieu {
+  display: flex;
+  height: 350px;
+  width: 100%;
+}
+
+.close-modal {
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.diachi_gioithieu {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+
+.diachi_gioithieu > i {
+  font-size: 21px;
+}
+
+.gia_gioithieu {
+  font-size: 16px;
+  color: var(--title);
+  font-weight: bold;
+}
+
+.gia_gioithieu > span {
+  color: black;
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.thongtin_gioithieu {
+  width: 63%;
+}
+
+.thongtin_gioithieu > h4 {
+  font-weight: bold;
+  color: var(--title);
+  font-size: 22px;
+  border-bottom: 1px solid var(--borderColor);
+  padding-bottom: 7px;
+  margin-bottom: 15px;
+}
+
+.lienhe_gioithieu {
+  width: 33%;
+}
+
+@media only screen and (max-width: 768px) {
+  .item_tienich_gioithieu {
+    width: 50%;
+  }
+
+  .gioithieu_detailduan {
+    flex-direction: column;
+  }
+
+  .thongtin_gioithieu {
+    width: 100%;
+  }
+
+  .lienhe_gioithieu {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .item_tienich_gioithieu {
+    width: 100%;
+  }
+
+  .title_item_tinchinh_gioithieu {
+    width: 120px !important;
+  }
+}

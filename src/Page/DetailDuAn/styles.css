@@ -1,0 +1,21 @@
+.detailduan {
+  height: auto;
+  background-color: var(--mainBG);
+}
+.container_detailduan {
+  width: 100%;
+  padding: 30px 5% 45px 5%;
+  height: auto;
+}
+
+.close-modal {
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+@media only screen and (max-width: 990px) {
+  .container_detailduan {
+    width: 100%;
+    padding: 10px 5% 30px 5%;
+  }
+}

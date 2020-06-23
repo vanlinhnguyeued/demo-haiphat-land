@@ -1,0 +1,31 @@
+.nhaleganday_detailnhale {
+  margin-top: 30px;
+}
+.nhaleganday_detailnhale > h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  border-bottom: 1px solid var(--borderColor);
+  padding-bottom: 5px;
+}
+.div_button_nhaleganday_detailnhale {
+  flex-direction: row;
+  display: flex;
+  border: 1px solid #c3c3c3;
+  border-radius: 5px;
+}
+.div_cn_nhaleganday_detailnhale {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+.div_cn_nhaleganday_detailnhale > p {
+  margin-bottom: 0;
+  font-size: 15px;
+}
+@media only screen and (max-width: 768px) {
+  .nhaleganday_detailnhale {
+    margin-top: 15px;
+  }
+}

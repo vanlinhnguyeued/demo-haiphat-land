@@ -1,0 +1,31 @@
+.main_post {
+  overflow: auto;
+  background-color: var(--mainBG);
+  padding: 10px;
+}
+.main_post::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #c7bebede;
+}
+
+.main_post::-webkit-scrollbar {
+  width: 0;
+  height: 5px;
+  background-color: #c7bebede;
+  display: inherit;
+}
+
+.main_post:hover::-webkit-scrollbar {
+  display: inherit;
+}
+
+.main_post::-webkit-scrollbar-thumb {
+  background-color: var(--title);
+}
+
+.ant-table-tbody > tr > td {
+  text-align: center;
+}
+.ant-table-thead > tr > th {
+  text-align: center !important;
+}

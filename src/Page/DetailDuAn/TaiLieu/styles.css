@@ -1,0 +1,33 @@
+.tailieu_chudautu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.tailieu_chudautu > a {
+  background-color: var(--buttonBGNoAc);
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--buttonTextNoAc);
+  border: 1px solid var(--borderColor);
+  border-radius: 5px;
+}
+.tailieu_chudautu > a:hover {
+  background-color: var(--buttonBG);
+  color: var(--buttonText);
+}
+.tailieu_chudautu > a > p {
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 1024px) {
+  .tailieu_chudautu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .tailieu_chudautu {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -1,0 +1,36 @@
+.ten_chudautu {
+  font-weight: bold;
+  color: var(--title);
+  font-size: 25px;
+  border-bottom: 1px solid var(--borderColor);
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+.chudautu_detailduan {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+}
+
+.thongtin_chudautu {
+  width: 63%;
+}
+
+.lienhe_chudautu {
+  width: 33%;
+}
+
+@media only screen and (max-width: 768px) {
+  .chudautu_detailduan {
+    flex-direction: column;
+  }
+
+  .thongtin_chudautu {
+    width: 100%;
+  }
+
+  .lienhe_chudautu {
+    width: 100%;
+  }
+}

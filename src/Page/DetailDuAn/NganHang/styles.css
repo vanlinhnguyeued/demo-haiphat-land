@@ -1,0 +1,124 @@
+.nganhang_detailduan {
+  padding: 10px;
+}
+.nganhang_detailduan > h2 {
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.row_nganhang {
+  display: flex;
+  justify-content: space-between;
+}
+.col1_nganhang {
+  width: 48%;
+}
+.text_col1_nganhang {
+  margin-bottom: 0;
+}
+.col2_nganhang {
+  width: 48%;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+.bieudo_col2_nganhang {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.col1_bieudo_col2_nganhang {
+  width: 56%;
+}
+.col2_bieudo_col2_nganhang {
+  width: 38%;
+}
+.col1_bieudo_col2_nganhang > p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+.col2_bieudo_col2_nganhang > p {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--title);
+  margin-bottom: 0;
+}
+.content_drop_nganhang {
+  overflow: auto;
+  max-height: 250px;
+  background: #fff;
+  border-radius: 3px;
+}
+.label_drop_nganhang {
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #c3c3c3;
+}
+.label_drop_nganhang > p {
+  margin-bottom: 0;
+  font-size: 13px;
+  margin-right: 10px;
+}
+.item_drop_nganhang {
+  padding: 5px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.item_drop_nganhang:hover {
+  background-color: #f2f2f2;
+}
+.item_drop_nganhang > p {
+  margin-bottom: 0;
+  font-size: 13px;
+  margin-right: 10px;
+}
+.drop_nganhang {
+  width: 100%;
+  height: 32px;
+  display: flex;
+  background-color: var(--itemBG);
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--borderColor);
+  padding: 0 10px;
+  border-radius: 2px;
+  padding-top: 2px;
+}
+.drop_nganhang > p {
+  margin-bottom: 0;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 35px;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  font-size: 13.5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .row_nganhang {
+    flex-direction: column;
+  }
+  .col1_nganhang {
+    width: 100%;
+  }
+  .col2_nganhang {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .bieudo_col2_nganhang {
+    flex-direction: column;
+  }
+  .col1_bieudo_col2_nganhang {
+    width: 100%;
+  }
+  .col2_bieudo_col2_nganhang {
+    width: 100%;
+  }
+}

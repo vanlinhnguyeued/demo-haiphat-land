@@ -1,0 +1,101 @@
+.container_footer {
+  padding: 45px 5%;
+  background-color: var(--footer);
+  background-image: linear-gradient(
+      rgba(36, 30, 44, 0.1),
+      rgba(36, 30, 44, 0.1)
+    ),
+    url("http://haiphatland.com.vn/public/static/frontend/css/images/graphics/bg-footer.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.content_footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.logo_footer {
+  padding: 10px;
+}
+.logo_footer > img {
+  width: 220px;
+  height: 50px;
+}
+.logo_footer > h2 {
+  color: var(--title);
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.lienhe_footer {
+  padding: 10px;
+}
+.lienhe_footer > h3 {
+  font-size: 17px;
+  color: var(--title);
+  font-weight: bold;
+}
+.lienhe_footer > h4 {
+  font-size: 16px;
+  color: var(--title);
+  font-weight: bold;
+}
+.lienhe_footer > p {
+  color: black;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.lienhe_footer > p > strong {
+  color: var(--title);
+}
+.chinhanh_footer {
+  margin-top: 10px;
+}
+.chinhanh_footer > a {
+  font-size: 16px;
+  color: var(--title);
+  font-weight: bold;
+}
+.chinhanh_footer > a:hover {
+  color: var(--title);
+}
+.ketnoi_footer {
+  padding: 10px;
+}
+.ketnoi_footer > h3 {
+  font-size: 17px;
+  color: var(--title);
+  font-weight: bold;
+}
+.icon_footer > a {
+  color: #555555;
+  margin-right: 30px;
+  font-size: 20px;
+}
+.icon_footer > a:hover {
+  color: var(--title);
+}
+.luu_y_footer {
+  color: black;
+  font-size: 14px;
+  margin-top: 15px;
+}
+@media only screen and (max-width: 1024px) {
+  .content_footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .content_footer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container_footer {
+    padding: 30px 5% 45px 5%;
+  }
+  .logo_footer > h2 {
+    font-size: 15px;
+  }
+}

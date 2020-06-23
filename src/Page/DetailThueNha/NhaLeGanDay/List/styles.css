@@ -1,0 +1,22 @@
+.p-tieude {
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.p_columns-tieude {
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.p-tieude:hover {
+  color: var(--title);
+}
+.img_column {
+  height: 60px;
+  width: 60px;
+}
+.main_column {
+  overflow: auto;
+}
+@media only screen and (max-width: 768px) {
+}

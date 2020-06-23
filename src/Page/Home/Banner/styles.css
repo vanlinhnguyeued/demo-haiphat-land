@@ -1,0 +1,122 @@
+.banner_home {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.img_banner_home {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  resize: unset;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+.view_search {
+  width: 50%;
+  z-index: 2;
+}
+.row_btn {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.type_search {
+  font-size: 16px;
+  color: #fff;
+  border-bottom: 2px solid transparent;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.type_search:hover {
+  color: var(--title);
+}
+.type_search_active {
+  font-size: 16px;
+  color: var(--title);
+  border-bottom: 2px solid var(--title);
+  margin-right: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.type_search_active:hover {
+  color: var(--title);
+}
+.list_filter {
+  overflow: auto;
+  max-height: 250px;
+  background: #fff;
+  margin-top: -4px;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.item_list_filter {
+  padding: 10px;
+  border-bottom: 1px solid var(--borderColor);
+}
+.title_item_list_filter {
+  margin-bottom: 0;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+}
+.title_item_list_filter:hover {
+  color: var(--title);
+}
+.item_list_filter > p {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+#scroll_filter::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #c7bebede;
+}
+
+#scroll_filter::-webkit-scrollbar {
+  width: 5px;
+  height: 0;
+  background-color: #c7bebede;
+  display: inherit;
+}
+
+#scroll_filter:hover::-webkit-scrollbar {
+  display: inherit;
+}
+
+#scroll_filter::-webkit-scrollbar-thumb {
+  background-color: var(--title);
+}
+.btn_filter {
+  background-color: var(--buttonBG);
+  color: var(--buttonText);
+  font-weight: bold;
+  width: 100px;
+  height: 100%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 1024px) {
+  .banner_home {
+    height: 250px;
+  }
+  .view_search {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .banner_home {
+    height: 200px;
+  }
+  .view_search {
+    width: 90%;
+  }
+}

@@ -1,0 +1,10 @@
+.container_home {
+  height: auto;
+  width: 100%;
+  background: var(--mainBG);
+}
+@media only screen and (max-width: 540px) {
+  .content_home {
+    padding: 30px 5% 45px 5%;
+  }
+}

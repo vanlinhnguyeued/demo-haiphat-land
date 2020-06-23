@@ -1,0 +1,109 @@
+.container_bds_video {
+  overflow: hidden;
+  padding: 40px 5% 15px 5%;
+}
+.title_bds_video {
+  color: var(--title);
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+.content_bds_video {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.item_bds_video {
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.item_img_bds_video {
+  height: 180px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.img_bds_video {
+  height: 100%;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+.icon_qt_bds_video {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.icon_qt_bds_video > i {
+  font-size: 23px;
+}
+.icon_qt_bds_video_hover {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.icon_qt_bds_video_hover > i {
+  font-size: 23px;
+  color: var(--title);
+}
+.item_bds_video:hover .img_bds_video {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.item_thongtin_bds_video {
+  background-color: var(--itemBG);
+  padding: 15px;
+}
+.title_item_thongtin_bds_video {
+  text-align: center;
+}
+
+.title_item_thongtin_bds_video > h2 {
+  font-size: 17px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 19px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  height: 38px;
+  margin-bottom: 5px;
+  color: black;
+}
+.title_item_thongtin_bds_video > p {
+  color: black;
+}
+.title_item_thongtin_bds_video > {
+  font-size: 17px;
+}
+.title_item_thongtin_bds_video:hover > p {
+  color: var(--title);
+}
+.title_item_thongtin_bds_video:hover > h2 {
+  color: var(--title);
+}
+
+@media only screen and (max-width: 990px) {
+  .content_bds_video {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .content_bds_video {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

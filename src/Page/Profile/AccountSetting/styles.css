@@ -1,0 +1,57 @@
+.container_setting {
+  display: flex;
+  flex-direction: column;
+}
+.content_confirm_setting {
+  padding: 10px;
+  border-bottom: 1px solid var(--borderColor);
+  justify-content: flex-end;
+  display: flex;
+}
+.btn_confirm_setting {
+  background-color: var(--buttonBGNoAc) !important;
+  color: var(--buttonTextNoAc) !important;
+  border: none !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 2px rgba(0, 0, 0, 0.1) !important;
+}
+.btn_confirm_setting:hover {
+  background-color: var(--buttonBG) !important;
+  color: var(--buttonText) !important;
+}
+.form_setting {
+  display: flex;
+  justify-content: center;
+}
+.form_content_setting {
+  margin: 10px;
+  width: 70%;
+}
+.row_setting {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.title_setting {
+  width: 30%;
+  justify-content: flex-start;
+  display: flex;
+  color: var(--text);
+}
+.content_setting {
+  width: 70%;
+  justify-content: center;
+  display: flex;
+  align-items: flex-start;
+  color: var(--text);
+  flex-direction: column;
+}
+.errorInput {
+  color: red;
+  font-size: 10px;
+  margin-top: 5px;
+}
+.text_sodt_lienhe::-webkit-outer-spin-button,
+.text_sodt_lienhe::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

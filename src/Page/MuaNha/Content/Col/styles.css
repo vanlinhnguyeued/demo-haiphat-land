@@ -1,0 +1,143 @@
+.container_nhale {
+  margin-bottom: 10px;
+}
+.title_nhale {
+  color: var(--title);
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+.content_nhale {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.content_nhale_2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.item_nhale {
+  margin: 5px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.item_img_nhale {
+  height: 180px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.img_nhale {
+  height: 100%;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+.icon_qt_nhale {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.icon_qt_nhale > i {
+  font-size: 23px;
+}
+.icon_qt_nhale_hover {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.icon_qt_nhale_hover > i {
+  font-size: 23px;
+  color: var(--title);
+}
+.item_nhale:hover .img_nhale {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.item_thongtin_nhale {
+  background-color: var(--itemBG);
+  padding: 15px;
+}
+.title_item_thongtin_nhale {
+  font-size: 17px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 19px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  height: 38px;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+.title_item_thongtin_nhale:hover {
+  color: var(--title);
+}
+.diachi_item_thongtin_nhale {
+  color: var(--subTitle);
+  font-size: 13.5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 19px;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  height: 19px;
+  margin-bottom: 2px;
+}
+.diachi_item_thongtin_nhale > i {
+  font-size: 16px;
+  margin-right: 5px;
+}
+.gia_item_thongtin_nhale {
+  font-size: 15px;
+  color: black;
+  margin-bottom: 2px;
+}
+.sl_item_thongtin_nhale {
+  display: flex;
+  align-items: center;
+}
+.sl_item_thongtin_nhale > div {
+  display: flex;
+  align-items: flex-end;
+  color: black;
+  margin-right: 20px;
+  font-size: 13.9px;
+}
+.sl_item_thongtin_nhale > div > img {
+  margin-right: 5px;
+}
+@media only screen and (max-width: 1024px) {
+  .content_nhale {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 853px) {
+  .content_nhale {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .content_nhale {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .content_nhale_2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

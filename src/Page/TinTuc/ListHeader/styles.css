@@ -1,0 +1,110 @@
+.list_header_tintuc {
+  border-bottom: 1px solid var(--borderColor);
+  padding: 40px 5% 30px 5%;
+  background-color: var(--mainBG);
+  overflow: hidden;
+}
+
+.row_list_header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.col_list_header {
+  width: 49.5%;
+  height: 300px;
+  position: relative;
+}
+
+.img_col_list_header {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.img_col_list_header > img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+.img_col_list_header:hover > img {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+.info_col_list_header {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
+  right: 0;
+  padding: 15px;
+}
+
+.info_col_list_header > p {
+  margin-bottom: 0;
+  color: white;
+}
+
+.title_info_col_list_header {
+  margin-bottom: 5px;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 20px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  height: 40px;
+  font-weight: bold;
+}
+
+.title_info_col_list_header:hover {
+  color: var(--title);
+}
+.title_renderitem_listheader {
+  margin-bottom: 5px;
+  color: black;
+  font-size: 17px;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 20px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  height: 40px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.title_renderitem_listheader:hover {
+  color: var(--title);
+}
+.img_renderitem_listheader {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+.img_renderitem_listheader > img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+.img_renderitem_listheader:hover > img {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+@media only screen and (max-width: 768px) {
+  .row_list_header {
+    flex-direction: column;
+  }
+  .col_list_header {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}

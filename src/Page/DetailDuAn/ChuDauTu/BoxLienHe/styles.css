@@ -1,0 +1,54 @@
+.daily_lienhe_gioithieu {
+  width: 100%;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.daily_lienhe_gioithieu > h2 {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+
+.daily_lienhe_gioithieu > div {
+  background-color: var(--itemBG);
+  padding: 7px 10px;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  font-size: 15px;
+  color: black;
+}
+.daily_lienhe_gioithieu > div:hover {
+  color: var(--title);
+  cursor: pointer;
+}
+.box_lienhe_gioithieu {
+  width: 100%;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.box_lienhe_gioithieu > h2 {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+.button_lienhe_gioithieu {
+  background: var(--buttonBG);
+  color: var(--buttonText);
+  text-align: center;
+  font-weight: 700;
+  padding: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .daily_lienhe_gioithieu {
+    margin-top: 30px;
+  }
+}

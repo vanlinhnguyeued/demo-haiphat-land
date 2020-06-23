@@ -1,0 +1,73 @@
+import React, { Component } from "react";
+import RenderItem from "./renderItem";
+
+class index extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: [
+        {
+          ID: 1,
+          Avatar:
+            "https://chungcuvinaconex2.com/wp-content/uploads/z938728466972_c1549f99449d3fe4132bfceeff8e9d37.jpg",
+          TenCH:
+            "Căn hộ A1001 - TÒA S1 - Phường Tây Mỗ- Đại Mỗ, Quận Nam Từ Liêm, TP Hà Nội",
+          DiaChi: "Phường Tây Mỗ- Đại Mỗ, Quận Nam Từ Liêm, TP Hà Nội",
+          Gia: "~1,5 Tỷ",
+          PhongNgu: 3,
+          DienTich: "35m2",
+          WC: 2,
+        },
+        {
+          ID: 2,
+          Avatar:
+            "https://chungcuvinaconex2.com/wp-content/uploads/z938728466972_c1549f99449d3fe4132bfceeff8e9d37.jpg",
+          TenCH: "Căn hộ A1002 - TÒA S1",
+          DiaChi: "Phường Tây Mỗ- Đại Mỗ, Quận Nam Từ Liêm, TP Hà Nội",
+          Gia: "~1,8 Tỷ",
+          PhongNgu: 4,
+          DienTich: "40.5m2",
+          WC: 3,
+        },
+        {
+          ID: 3,
+          Avatar:
+            "https://chungcuvinaconex2.com/wp-content/uploads/z938728466972_c1549f99449d3fe4132bfceeff8e9d37.jpg",
+          TenCH: "Căn hộ A1003 - TÒA S1",
+          DiaChi: "Phường Tây Mỗ- Đại Mỗ, Quận Nam Từ Liêm, TP Hà Nội",
+          Gia: "~1,2 Tỷ",
+          PhongNgu: 2,
+          DienTich: "31.5m2",
+          WC: 1,
+        },
+        {
+          ID: 4,
+          Avatar:
+            "https://chungcuvinaconex2.com/wp-content/uploads/z938728466972_c1549f99449d3fe4132bfceeff8e9d37.jpg",
+          TenCH: "Căn hộ A1004 - TÒA S1",
+          DiaChi: "Phường Tây Mỗ- Đại Mỗ, Quận Nam Từ Liêm, TP Hà Nội",
+          Gia: "~1,72 Tỷ",
+          PhongNgu: 3,
+          DienTich: "37.2m2",
+          WC: 2,
+        },
+      ],
+    };
+  }
+  render() {
+    const { data } = this.state;
+    return (
+      <div className="container_nhathue_home">
+        <h2 className="title_nhathue_home" data-aos="zoom-in">
+          Nhà lẻ cho thuê
+        </h2>
+        <div className="content_nhathue_home">
+          {data.map((item, index) => (
+            <RenderItem item={item} index={index} key={index} />
+          ))}
+        </div>
+      </div>
+    );
+  }
+}
+export default index;

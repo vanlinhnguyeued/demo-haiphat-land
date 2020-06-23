@@ -1,0 +1,33 @@
+@media only screen and (max-width: 1024px) {
+  .content_nhale_home {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 853px) {
+  .content_nhale_home {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .content_nhale_home {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.loading_page {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 30px 50px;
+  margin: 20px 0;
+}
+.title_duan_home {
+  color: var(--title);
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-bottom: 0px;
+  margin-top: 35px;
+}

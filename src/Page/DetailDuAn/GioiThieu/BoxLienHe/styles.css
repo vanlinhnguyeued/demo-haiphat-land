@@ -1,0 +1,99 @@
+.daily_lienhe_gioithieu {
+  width: 100%;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.daily_lienhe_gioithieu > h2 {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+.row_daily_lienhe_gioithieu {
+  display: flex;
+  overflow: hidden;
+}
+.img_daily_lienhe_gioithieu {
+  height: 80px;
+  width: 80px;
+  margin-right: 15px;
+}
+.name_daily_lienhe_gioithieu {
+  color: var(--title);
+  font-size: 30px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.box_lienhe_gioithieu {
+  width: 100%;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.box_lienhe_gioithieu > h2 {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+.button_lienhe_gioithieu {
+  background: var(--buttonBG);
+  color: var(--buttonText);
+  text-align: center;
+  font-weight: 700;
+  padding: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.box_baocao_gioithieu {
+  width: 100%;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.box_baocao_gioithieu > h2 {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+.box_baocao_gioithieu > p {
+  font-size: 15px;
+  color: dimgrey;
+}
+.button_baocao_gioithieu {
+  background: #dc3545;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  padding: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 990px) {
+  .name_daily_lienhe_gioithieu {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .img_daily_lienhe_gioithieu {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .img_daily_lienhe_gioithieu {
+    height: 80px;
+    width: 80px;
+  }
+  .daily_lienhe_gioithieu {
+    margin-top: 30px;
+  }
+  .name_daily_lienhe_gioithieu {
+    font-size: 18px;
+  }
+}

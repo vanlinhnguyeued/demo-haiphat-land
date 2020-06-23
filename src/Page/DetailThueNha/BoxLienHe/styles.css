@@ -1,0 +1,104 @@
+.daily_lienhe_detailthuenha {
+  width: 100%;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.daily_lienhe_detailthuenha > h2 {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+.row_daily_lienhe_detailthuenha {
+  display: flex;
+  overflow: hidden;
+}
+.img_daily_lienhe_detailthuenha {
+  height: 80px;
+  width: 80px;
+  margin-right: 15px;
+}
+.name_daily_lienhe_detailthuenha {
+  font-weight: bold;
+  color: black;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.name_daily_lienhe_detailthuenha:hover {
+  color: var(--title);
+}
+.thongtin_daily_lienhe_detailthuenha > p {
+  font-size: 16px;
+  color: var(--title);
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.box_lienhe_detailthuenha {
+  width: 100%;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.box_lienhe_detailthuenha > h2 {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+.button_lienhe_detailthuenha {
+  background: var(--buttonBG);
+  color: var(--buttonText);
+  text-align: center;
+  font-weight: 700;
+  padding: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.box_baocao_detailthuenha {
+  width: 100%;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.box_baocao_detailthuenha > h2 {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+.box_baocao_detailthuenha > p {
+  font-size: 15px;
+  color: dimgrey;
+}
+.button_baocao_detailthuenha {
+  background: #dc3545;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  padding: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 990px) {
+  .name_daily_lienhe_detailthuenha {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .img_daily_lienhe_detailthuenha {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .img_daily_lienhe_detailthuenha {
+    height: 80px;
+    width: 80px;
+  }
+  .name_daily_lienhe_detailthuenha {
+    font-size: 18px;
+  }
+}
