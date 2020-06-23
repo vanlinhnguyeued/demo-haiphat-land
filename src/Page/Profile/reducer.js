@@ -26,7 +26,6 @@ export const getListProjects = () => async (dispatch) => {
   dispatch(setLoadingProject(true));
   try {
     const res = await getListProjectService();
-    console.log("a");
     if (res.status === 200) {
       dispatch(setProject(res.data));
       dispatch(setLoadingProject(false));
