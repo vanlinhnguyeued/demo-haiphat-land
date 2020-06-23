@@ -25,8 +25,6 @@ server
       const params = qs.parse(req.query);
       const counter = parseInt(params.counter, 10) || apiResult || 0;
 
-      // Compile an initial state
-      const preloadedState = { counter };
       const context = {};
       const store = configureStore();
       const markup = renderToString(
