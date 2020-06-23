@@ -2,6 +2,9 @@
   "name": "razzle-app",
   "version": "0.1.0",
   "license": "MIT",
+  "engines": {
+    "node": "12.16.2"
+  },
   "scripts": {
     "start": "razzle start",
     "build": "razzle build",
@@ -45,9 +48,7 @@
     "redux-thunk": "^2.3.0",
     "serialize-javascript": "^4.0.0",
     "styled-components": "^5.1.1",
+    "terser": "^4.0.0",
     "yup": "^0.29.1"
-  },
-  "engines": {
-    "node": "12.16.2"
   }
 }
